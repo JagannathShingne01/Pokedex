@@ -42,11 +42,12 @@ function PokemonList(){
     },[])
     return (
         <div className="pkemon-list-wrapper">
-            <div>Pokemon List</div>
+            <div className="pokemon-wrapper">
             {(isLoading) ? "Loading....." :
             pokemonList.map((p) => <Pokemon name={p.name} image={p.image} key={p.id}/>)
-        }
-    </div>
+            }
+            </div>
+        </div>
     )
 }
 export default PokemonList;
