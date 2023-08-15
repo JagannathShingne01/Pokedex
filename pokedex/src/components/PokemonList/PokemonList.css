@@ -1,5 +1,8 @@
 .pkemon-list-wrapper{
     margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 .pokemon-wrapper{
@@ -7,4 +10,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.controls button{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 1rem;
 }
