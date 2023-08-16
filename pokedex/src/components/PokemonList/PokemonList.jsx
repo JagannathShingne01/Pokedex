@@ -7,7 +7,7 @@ function PokemonList(){
     const [pokemonList, setPokemonList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    const [pokedexUrl, setPokedexUrl] = useState( "https://pokeapi.co/api/v2/pokemon");
+    const [pokedexUrl, setPokedexUrl] = useState( "https://pokeapi.co/api/v2/pokemon" );
 
     const[nextUrl, setNextUrl] = useState("");
     const[prevUrl, setPrevUrl] = useState("");
@@ -17,6 +17,7 @@ function PokemonList(){
         const response = await axios.get(pokedexUrl); // this download list of 20 pokemon
 
         const pokemonResults = response.data.results; // we get array of pokemon from result
+        console.log(response.data)
         setNextUrl(response.data.next);
         setPrevUrl(response.data.previous);
 
@@ -49,7 +50,7 @@ function PokemonList(){
         <div className="pkemon-list-wrapper">
             <div className="pokemon-wrapper">
             {(isLoading) ? "Loading....." :
-            pokemonList.map((p) => <Pokemon name={p.name} image={p.image} key={p.id}/>)
+            pokemonList.map((p) => <Pokemon name={p.name} image={p.image} key={p.id} id={p.id}/>)
             }
             </div>
             <div className="controls">
