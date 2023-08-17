@@ -6,9 +6,7 @@ function PokemonList(){
 
     // const [pokemonList, setPokemonList] = useState([]);
     // const [isLoading, setIsLoading] = useState(true);
-
     // const [pokedexUrl, setPokedexUrl] = useState( "https://pokeapi.co/api/v2/pokemon" );
-
     // const[nextUrl, setNextUrl] = useState("");
     // const[prevUrl, setPrevUrl] = useState("");
 
