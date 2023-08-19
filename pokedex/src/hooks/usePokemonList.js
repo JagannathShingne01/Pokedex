@@ -14,9 +14,9 @@ function usePokemonList() {
     async function downloadPokemon(){
       
         setPokemonListState({...pokemonListState, isLoading: true});
-        const response = await axios.get(pokemonListState.pokedexUrl); // this download list of 20 pokemon    
+        const response = await axios.get(pokemonListState.pokedexUrl);  
 
-        const pokemonResults = response.data.results; // we get array of pokemon from result
+        const pokemonResults = response.data.results;
         
         console.log("response js",response.data.pokemon)
         setPokemonListState((state)=>({
@@ -27,7 +27,7 @@ function usePokemonList() {
 
         const pokemonResultPromise = pokemonResults.map((pokemon) => axios.get(pokemon.url));
 
-        const pokemonData = await axios.all(pokemonResultPromise); //passing that promise to axois.all
+        const pokemonData = await axios.all(pokemonResultPromise);
         console.log(pokemonData);
 
         //now iterate on the data of each pokemon, and extract data
