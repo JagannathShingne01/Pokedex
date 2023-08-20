@@ -1,15 +1,21 @@
 .pokemon-details-name{
     color: #111111;
     font-size: xx-large;
+    margin-top: 2rem;
 }
 .pokemon-details-name > span{
     letter-spacing: 1rem;
     color: black;
 }
 .details{
+    height: 80%;
+    width: 60%;
+    background-color:aliceblue;
     display: flex;
+    border-radius: 30px;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
     margin-left: 7rem;
 }
 .pokemon-details-types{
@@ -19,37 +25,45 @@
     font-size: larger;
     
 }
+.pokemon-details-types > span{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
 .pokemon-details-types div{
     border: 1px solid gainsboro;
     border-radius: 15px;
+    text-transform: capitalize;
     padding: 1rem;
     margin-left: 1rem;
     background-color: rgb(156, 127, 127);
 }
 .pokemon-details-img{
+    height: 60%;
+    width: 20%;
+    border-radius: 20px;
     max-height: 300px;
     min-height: 270px;
-    margin-top: -12rem;
-    margin-left: 4rem;
-    background-color: transparent;              ;
-    
+    background-color: burlywood;              ;
 }
 .pokemon-details-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    height: 40rem;
-    width: auto;
-    background-color: aliceblue;
 }
 .similar-pokemon{
     margin: 2rem;
+    padding: 2rem;
     font-size: xx-large;
     background-color: rgb(223, 221, 226);
     border: 1px solid white;
     border-radius: 10px;
 }
 .similar-pokemon ul{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-transform: capitalize;
     font-size: large;
     list-style-type: disclosure-closed;
+
 }

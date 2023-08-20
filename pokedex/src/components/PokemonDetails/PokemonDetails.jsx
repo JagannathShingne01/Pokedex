@@ -14,12 +14,13 @@ function PokemonDetails({pokemonName}) {
             <div className="pokemon-details-name">Weight: {pokemon.weight} lbs</div>
         
             <div className="pokemon-details-types">
-                {pokemon.types && pokemon.types.map((t) => <div className="details" key={t}> {t} </div>)}
+           <span> Type:</span>
+                {pokemon.types && pokemon.types.map((t) => <div className="details" key={t}>  {t} </div>)}
             </div>
             {
                 pokemon.types && pokemon.similarPokemons && 
                 <div className="similar-pokemon">
-                    more {pokemon.types[0]} type pokemons
+                   <span> More {pokemon.types[0]} Type Pokemons </span>
                     <ul>
                     { pokemon.similarPokemons.map((p) => <li key={p.pokemon.url}>{p.pokemon.name}</li>)}
                     </ul>
