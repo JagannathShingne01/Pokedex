@@ -1,14 +1,24 @@
-.outer-pokedex{
+*{
+    margin: 0;
+    padding: 0;
+}
+#pokedex-heading{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-#pokedex-heading{
     margin: 0 auto;
+    padding: 1rem;
     letter-spacing: 5px;
+    height: 10%;
+    width: 100%;
+    background-color: #111111;
 
 }
+#pokedex-heading > a{
+    color: white;
+}
+
 a{
-    color: #111111;
+    color: black;
     text-decoration: none;
 }
