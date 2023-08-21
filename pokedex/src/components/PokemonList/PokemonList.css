@@ -12,6 +12,25 @@
     justify-content: space-evenly;
 }
 .controls button{
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     margin-left: 1rem;
+    color: rgb(107, 103, 103);
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: 0.5s linear;
+}
+.controls button:hover{
+    background-color: gray;
+    pointer-events: fill;
+    color: rgb(42, 30, 30);
+    cursor: pointer;
+
+
+}
+@media (max-width: 600px){
+    .pokemon-wrapper{
+        display: flex;
+        flex-direction: column;
+
+    }
 }

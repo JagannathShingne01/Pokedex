@@ -6,10 +6,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.5s linear;
+
+    
 }
 .pokemon-names{
     font-size: larger;
     letter-spacing: 0.5rem;
+    text-transform: capitalize;
 }
 .pokemon-img{
     height: 150px;
@@ -17,6 +21,16 @@
     margin-top: 1rem;
 }
 .pokemon:hover{
-    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 20px;
+    background-color: antiquewhite;
+}
+@media (max-width: 600px){
+    .pokemon{
+    margin: 1rem 2rem;
+    }
+    .pokemon-img{
+    height: 10rem;
+    padding: 1rem;
+    }
 }
