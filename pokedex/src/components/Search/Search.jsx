@@ -29,11 +29,12 @@ function Search({updateSearchTerm}){
             <input
                 id="pokemon-name-search"
                 type="text"
+                autocomplete="off"
                 placeholder="pokemon name......"
                 value={searchText}
                 onChange={handleChange}
             />
-            {isLoading && <div className="loading-message">Loading...</div>}
+            {isLoading && <div className="loading-message">not found</div>}
         </div>
     );
 }
