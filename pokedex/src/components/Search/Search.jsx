@@ -3,17 +3,17 @@ import useDebounce from "../../hooks/useDebounce";
 import "./Search.css"
 
 function Search({updateSearchTerm}){
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [searchText, setSearchText] = useState("");
     const debouncedCallback = useDebounce((text) => {
         updateSearchTerm(text);
-        setIsLoading(true);
+        setIsLoading(false);
     });
 
     useEffect(() => {
         const delay = setTimeout(() => {
             setIsLoading(false);
-        }, 1000);
+        }, 2000);
 
         return () => clearTimeout(delay);
     }, [debouncedCallback]);
@@ -25,6 +25,8 @@ function Search({updateSearchTerm}){
     };
 
     return (
+        <>
+        { isLoading ? "Loading..." :(
         <div className="search-wrapper">
             <input
                 id="pokemon-name-search"
@@ -34,8 +36,22 @@ function Search({updateSearchTerm}){
                 value={searchText}
                 onChange={handleChange}
             />
-            {isLoading && <div className="loading-message">not found</div>}
+           
         </div>
+        )
+        }
+        </>
+        // <div className="search-wrapper">
+        //     <input
+        //         id="pokemon-name-search"
+        //         type="text"
+        //         autocomplete="off"
+        //         placeholder="pokemon name......"
+        //         value={searchText}
+        //         onChange={handleChange}
+        //     />
+        //     {isLoading && <div className="loading-message">not found</div>}
+        // </div>
     );
 }
 export default Search;
