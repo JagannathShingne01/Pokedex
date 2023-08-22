@@ -13,16 +13,16 @@
 }
 .controls button{
     padding: 1rem 2rem 1rem 2rem;
-    margin-left: 1rem;
-    color: rgb(107, 103, 103);
-    border: 1px solid white;
+    margin: 2rem 1rem;
+    color: rgba(72, 41, 41, 0.67);
+    border: 1px solid grey;
     border-radius: 8px;
     transition: 0.5s linear;
 }
 .controls button:hover{
     background-color: gray;
     pointer-events: fill;
-    color: rgb(42, 30, 30);
+    color: rgb(114, 80, 80);
     cursor: pointer;
 
 
