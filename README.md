@@ -40,6 +40,7 @@ Usage
 Start the development server:  
     
     npm start
+    npm run div
 
 Open your web browser and go to http://localhost:3000 to access the app.
 
