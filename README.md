@@ -8,8 +8,9 @@ Welcome to the Pokedex repository! This web application is designed to help you 
 - Enjoy a responsive design that works on various devices.
 
 ## Demo
+You can check out a live demo of the app - https://pokedex-s6r4.vercel.app/
 
-You can check out a live demo of the app ![Screenshot (3)](https://github.com/JagannathShingne01/Pokedex/assets/133676629/1849360b-9f16-405b-b354-13469f8c1a0c)
+![Screenshot (3)](https://github.com/JagannathShingne01/Pokedex/assets/133676629/1849360b-9f16-405b-b354-13469f8c1a0c)
 ![Screenshot (2)](https://github.com/JagannathShingne01/Pokedex/assets/133676629/e6bfaa30-46cc-48c4-99fd-585b0cfa705d)
 
 ## Getting Started
@@ -39,6 +40,7 @@ Usage
 Start the development server:  
     
     npm start
+    npm run div
 
 Open your web browser and go to http://localhost:3000 to access the app.
 
