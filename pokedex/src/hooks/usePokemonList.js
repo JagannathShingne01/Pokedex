@@ -10,7 +10,6 @@ function usePokemonList() {
         prevUrl: ""
     });
     async function downloadPokemon(){
-      
         setPokemonListState({...pokemonListState, isLoading: true});
         const response = await axios.get(pokemonListState.pokedexUrl);  
 
