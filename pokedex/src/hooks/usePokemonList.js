@@ -9,8 +9,6 @@ function usePokemonList() {
         nextUrl: "",
         prevUrl: ""
     });
-
-
     async function downloadPokemon(){
       
         setPokemonListState({...pokemonListState, isLoading: true});
