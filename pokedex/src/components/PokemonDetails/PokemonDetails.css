@@ -8,10 +8,11 @@
     letter-spacing: 1rem;
     color: black;
 }
+
 .details{
     height: 80%;
     width: 60%;
-    background-color:aliceblue;
+    background-color:#E5E5E5;
     display: flex;
     border-radius: 30px;
     flex-direction: column;
@@ -59,6 +60,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 .similar-pokemon{
     margin: 2rem;

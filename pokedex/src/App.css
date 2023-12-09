@@ -4,7 +4,8 @@
 }
 #pokedex-heading{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 1rem;
@@ -22,8 +23,17 @@ a{
     color: black;
     text-decoration: none;
 }
+.navimg{
+    height: 60px;
+}
+
 @media (max-width: 600px){
     #pokedex-heading{
         display: flow;
     }
+    .navimg{
+        height: 30px;
+        
+    }
+    
 }
