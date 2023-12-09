@@ -9,10 +9,7 @@ function usePokemonList() {
         nextUrl: "",
         prevUrl: ""
     });
-
-
     async function downloadPokemon(){
-      
         setPokemonListState({...pokemonListState, isLoading: true});
         const response = await axios.get(pokemonListState.pokedexUrl);  
 
@@ -39,7 +36,6 @@ function usePokemonList() {
                 image:(pokemon.sprites.other) ? pokemon.sprites.other.dream_world.front_default :  pokemon.sprites.front_shiny, 
                 types: pokemon.types
             }
-
         });
         console.log(pokeListRes)
         setPokemonListState((state)=>({
